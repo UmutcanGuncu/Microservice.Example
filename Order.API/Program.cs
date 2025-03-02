@@ -1,6 +1,9 @@
 using MassTransit;
 using Microsoft.EntityFrameworkCore;
+using Order.API.Consumers;
 using Order.API.Models;
+using Shared;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,9 +20,15 @@ builder.Services.AddDbContext<OrderAPIDbContext>(opt =>
 });
 builder.Services.AddMassTransit(configure =>
 {
+    configure.AddConsumer<PaymentCompletedEventConsumer>();
+    configure.AddConsumer<StockNotReservedEventConsumer>();
+    configure.AddConsumer<PaymentFailedEventConsumer>();
     configure.UsingRabbitMq((context, cfg) =>
     {
         cfg.Host(new Uri(builder.Configuration["RabbitMQ"]));
+        cfg.ReceiveEndpoint($"{RabbitMQSettings.Order_PaymentCompletedEventQueue}",e=> e.ConfigureConsumer<PaymentCompletedEventConsumer>(context));
+        cfg.ReceiveEndpoint($"{RabbitMQSettings.Order_StockNotReceivedEventQueue}", e=> e.ConfigureConsumer<StockNotReservedEventConsumer>(context));
+        cfg.ReceiveEndpoint($"{RabbitMQSettings.Order_PaymentFailedEventQueue}", e=> e.ConfigureConsumer<PaymentFailedEventConsumer>(context));
     });
 });
 var app = builder.Build();

@@ -4,6 +4,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Order.API", "Order.API\Orde
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "Shared\Shared.csproj", "{81B8AF5E-F7E6-4EA5-B831-580FA5EF4370}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stock.API", "Stock.API\Stock.API.csproj", "{A51368CF-74F2-4EFD-A39D-BED64C6583F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Payment.API", "Payment.API\Payment.API.csproj", "{C2E214C0-AA80-40A2-8C70-476328E1C606}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +22,13 @@ Global
 		{81B8AF5E-F7E6-4EA5-B831-580FA5EF4370}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{81B8AF5E-F7E6-4EA5-B831-580FA5EF4370}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{81B8AF5E-F7E6-4EA5-B831-580FA5EF4370}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A51368CF-74F2-4EFD-A39D-BED64C6583F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A51368CF-74F2-4EFD-A39D-BED64C6583F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A51368CF-74F2-4EFD-A39D-BED64C6583F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A51368CF-74F2-4EFD-A39D-BED64C6583F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2E214C0-AA80-40A2-8C70-476328E1C606}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2E214C0-AA80-40A2-8C70-476328E1C606}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2E214C0-AA80-40A2-8C70-476328E1C606}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2E214C0-AA80-40A2-8C70-476328E1C606}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

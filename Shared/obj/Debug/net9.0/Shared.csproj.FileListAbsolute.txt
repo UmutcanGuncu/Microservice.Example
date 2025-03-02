@@ -5,6 +5,7 @@
 /Users/umutcanguncu/RiderProjects/MicroserviceProject/Microservice.Example/Shared/obj/Debug/net9.0/Shared.AssemblyInfoInputs.cache
 /Users/umutcanguncu/RiderProjects/MicroserviceProject/Microservice.Example/Shared/obj/Debug/net9.0/Shared.AssemblyInfo.cs
 /Users/umutcanguncu/RiderProjects/MicroserviceProject/Microservice.Example/Shared/obj/Debug/net9.0/Shared.csproj.CoreCompileInputs.cache
+/Users/umutcanguncu/RiderProjects/MicroserviceProject/Microservice.Example/Shared/obj/Debug/net9.0/Shared.sourcelink.json
 /Users/umutcanguncu/RiderProjects/MicroserviceProject/Microservice.Example/Shared/obj/Debug/net9.0/Shared.dll
 /Users/umutcanguncu/RiderProjects/MicroserviceProject/Microservice.Example/Shared/obj/Debug/net9.0/refint/Shared.dll
 /Users/umutcanguncu/RiderProjects/MicroserviceProject/Microservice.Example/Shared/obj/Debug/net9.0/Shared.pdb
